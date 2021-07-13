@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+:root{
+    --main-color: #22313F;
+    --second-color : #34495E;
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+#header{
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    height: 80px;
+    margin-bottom: 0;
+}
+
+.header-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+.main-nav{
+    display: flex;
+    list-style-type: none;
+}
+
+
+
+.nav-container li {
+    margin: auto 10px auto 10px;
+    font-weight: 400;
+}
+
+.hamburger-nav{
+    display: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#hero-section{
+    background-color: var(--second-color);
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 17vh;
+    padding-bottom: 25vh;
+}
+
+#hero-container{
+    width: 80%;
+    margin: auto;
+}
+
+#hero-container h1{
+    font-size: 3rem;
+    width: 60%;
+    color: white;
+    margin-top: 0;
+}
+
+#hero-container p{
+    font-size: 1rem;
+    color: white;
+    margin-top: -30px;
+    font-weight: 200;
+}
+
+#social-icons{
+    margin-top: 30px;
+}
+
+#social-icons img{
+    margin-right: 10px;
+}
+
+#projects{
+    padding-top: 90px;
+}
+
+.project-card{
+    width: 50%;
+    margin: auto auto 80px auto;
+    display: flex;
+}
+
+.project-card img{
+    outline: 1px solid #22313F;
+}
+
+.flex-reverse{
+    flex-direction: row-reverse;
+}
+
+.project-card h3{
+    font-size: 1.5rem;
+    color: #22313F;
+}
+
+.project-card img{
+    width: 300px;
+    height: 150px;
+}
+
+.project-info{
+    margin-top: -35px;
+    max-width: 60%;
+}
+
+
+.btn{
+    margin-right: 10px;
+    border: none;
+    padding: 5px;
+    background-color: #22313F;
+    color: white;
+    width: 50px;
+}
+
+#skills{
+    background-color: var(--second-color);
+    padding-top: 30px;
+    padding-bottom: 90px;
+    color: white;
+}
+
+.skill-container{
+    width: 80%;
+    margin: auto;
+
+
+}
+
+.skill-card-div{
+    margin: auto ;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skill-card{
+    padding: 5px 20px 0px 20px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    width: 25%;
+    min-width: 130px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 250px;
+
+
+}
+
+.skill-card li{
+    list-style-type: square;
+}
+
+#about{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#image img{
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+}
+
+#aboutme{
+    width: 50%;
+    margin-left: 30px;
+}
+
+#aboutme h4{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+#aboutme p{
+    font-size: 1.1rem;
+}
+
+.footer1{
+    width: 100%;
+    background-color: var(--second-color);
+    color: white;
+}
+
+.footer-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.thin{
+    font-weight: 300;
+    
+}
+
+.small-text{
+    line-height: 0.8rem;
+    font-size: 00.8rem;
+}
+
+#newsletter{
+    width: 30%;
+}
+
+#newsletter-button{
+  border: none;
+  background-color: var(--main-color);
+    padding: 10px;
+    color: white;
+    box-shadow: 0 0 4px white;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.footer2{
+    background-color: var(--main-color);
+    color: white;
+    margin-top: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer2 p{
+    margin: 0;
+}
+
+/*
+
+Media queries.
+Everythings fine till 1000 px
+
+
+*/
+
+@media (max-width: 1000px) {
+
+    .project-card img{
+        width: 200px;
+    }
+
+    .skill-container{
+
+        width: 90%;
+       
+    }
+
+    .skill-card-div{
+        width: 90%;
+    }
+
+    #hero-container h1{
+
+        font-size: 2.5rem;
+    }
+
+    
+}
+
+@media (max-width: 800px) {
+
+    .project-card{
+        width: 70%;
+    }
+
+    #image img{
+width: 250px;
+height: 250px;    }
+
+#aboutme h4{
+    font-size: 1.8rem;
+}
+
+#aboutme p{
+    font-size: 0.8rem;
+    margin-top: -20px;
+}
+
+.skill-card-div{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-card{
+    min-height: 300px;
+}
+
+#hero-container h1{
+
+    font-size: 2rem;
+}
+
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    .project-card{
+flex-direction: column-reverse;   
+ width: 70%;
+ justify-content: center;
+ align-items: center;
+    }
+
+    .project-info{
+        margin-left: 0 !important;
+        width:300px;
+        max-width: 300px;
+        margin-right: 0 !important;
+    }
+
+    .project-card img{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #about{
+        align-items: center;
+    }
+
+    #image img{
+        width: 200px;
+        height: 200px;    }
+        
+        #aboutme h4{
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+        
+        #aboutme p{
+            font-size: 0.8rem;
+            margin-top: -20px;
+        }
+
+        .main-nav{display: none;}
+
+        .hamburger-nav{
+            display: block;
+            position: absolute;
+            top: 10px;  
+            right: 20px;
+            width: 50px;  
+            height: 50px;
+            background: transparent;
+            list-style-type: none;
+        }
+
+        
+        
+        .hamburger-nav li{
+           background-color: white;
+           height: 3px;
+           width: 25px;
+           margin: 5px auto 5px auto;
+        }
+
+        .open-menu{
+            width: 100%;
+            height: 100%;
+            background-color: var(--second-color);
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 65px;
+            z-index: 100;
+            padding-top: 20%;
+        }
+
+        .main-nav li{
+            text-align: center;
+            font-size: 2rem;
+        }
+        
+
+        #newsletter {
+            font-size: 0.8rem;
+        }
+
+    
+}
+
+@media (max-width: 480px) {
+    #about{
+        flex-direction: column;
+    }
+    #aboutme{
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .skill-card-div{
+        width: 90%;
+    }
+    .skill-card{
+        min-width: 60%;
+
+    }
+
+    #hero-container h1{
+
+        font-size: 1.6rem;
+        width: 80%;
+    }
+
+    #hero-container p{
+        font-size: 0.9rem;
+        margin-top: -20px;
+
+        
+    }
+
+    .header-container h2{
+        font-size: 1.2rem;
+    }
+
+    .main-nav{display: none;}
+
+    .hamburger-nav{
+        display: block;
+        list-style-type: none;
+        padding: 0;
+        margin-top: 5px;
+
+    }
+
+    
+    
+    .hamburger-nav li{
+       background-color: white;
+       height: 3px;
+       width: 25px;
+       margin: 5px auto 5px auto;
+    }
+
+    .open-menu{
+        width: 100%;
+        height: 100%;
+        background-color: var(--second-color);
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 65px;
+        z-index: 100;
+        padding-top: 20%;
+    }
+
+    .main-nav li{
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #newsletter{
+        width: 80%;
+    }
+    
+}
