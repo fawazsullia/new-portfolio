@@ -15,6 +15,4 @@ document.getElementById("newsletter-button").addEventListener('click',()=>{
 
 document.querySelector(".hamburger-nav").addEventListener('click', ()=>{
 
-document.querySelector(".main-nav").classList.toggle("open-menu")
-
-})
+document.querySelector(".main-nav").classList.toggle("open-menu") })
